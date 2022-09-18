@@ -1,0 +1,18 @@
+READ AND WRITE "Barang" with string
+READ AND WRITE "Jumlahbarang" with number
+READ AND WRITE "Keranjang" with number
+READ AND WRITE "Tambahjenisbarang" with boolean
+
+Begin
+   login to application
+   search for items
+   STORE "Tambahjenisbarang" with "True"
+   while "Tambahjenisbarang" equal "True"
+   Do
+      Input "barang"
+      Input "jumlahbarang"
+      STORE "Keranjang" with add "Jumlahbarang"
+      Input "Tambahjenisbarang"
+   Endwhile
+   Output "Keranjang"
+End
